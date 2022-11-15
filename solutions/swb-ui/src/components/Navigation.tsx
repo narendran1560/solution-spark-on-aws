@@ -22,11 +22,12 @@ export default function Navigation({
   onFollowHandler
 }: NavigationProps): JSX.Element {
   const defaultNavHeader: SideNavigationProps.Header = {
-    text: 'Service Workbench',
+    text: 'Cloud Jump',
     href: '#/'
   };
   const adminNavItems: ReadonlyArray<SideNavigationProps.Item> = [
     { type: 'link', text: 'Users', href: '/users' },
+    { type: 'link', text: 'Projects', href: '/projects' },
     { type: 'link', text: 'Workspaces', href: '/environments' }
   ];
   const userNavItems: ReadonlyArray<SideNavigationProps.Item> = [

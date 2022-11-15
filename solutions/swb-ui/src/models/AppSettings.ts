@@ -20,9 +20,9 @@ export interface AppSettings {
 
 export const defaultAppSettings: AppSettings = {
   language: Language.en,
-  logo: '/logo-image.png',
+  logo: '/hbs-logo.png',
   favicon: '/favicon.ico',
-  name: 'Service Workbench on AWS (BETA)',
+  name: 'Cloud Jump',
   slogan: '',
   description: ''
 };

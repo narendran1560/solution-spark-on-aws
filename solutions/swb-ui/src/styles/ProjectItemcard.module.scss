@@ -1,0 +1,664 @@
+@use '~@awsui/design-tokens/index.scss' as awsui;
+
+.grid {
+  background-color: aqua;
+}
+ 
+.cardImage { 
+    background-image: url(https://lh3.googleusercontent.com/ZQ8sV16x2gehM61bQ72xENdqPl9JDJHV_ekHZsM85CarjaGb-3WJuAOJxUMY8y8WVuahodu4SJYqmcTjR8R6zS-z10Wd-2oC02YR7lI);
+}
+
+.cardImgArea {
+  width: 44px;
+  height: 44px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+  float: left;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+.cardContainer{
+  height: 190px;
+  cursor: pointer;
+}
+
+.cardContainer:hover{
+  background-color: #F7F7F7;
+}
+
+.cardFirstSection{
+  display: flex;
+  justify-content: space-between;
+  .firstS{
+    width: 5%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    .imgCont {
+      width: 80px;
+      height: 80px;
+      background: black;
+      border-radius: 10px;
+      img{
+        width: 60px;
+        height: 60px;
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+    }
+
+    
+  }
+  .secondS {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    .secTabFirst {
+      color: #0073bb;
+      font-size: 16px;
+      font-weight: 700;
+    }
+    .secTabSecond {
+      color: gray;
+      font-size: 12px;
+    }
+    .secTabThird {
+      font-size: 15px;
+      font-weight: 600;
+    }
+  }
+  .thirdS{
+    width: 17%;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    .thirdTabFirst {
+      text-align: center;
+      font-size: 12px;
+      padding: 0px 25px;
+      border-radius: 20px;
+      background-color: #3fcb57;
+      color: #07102a;
+    }
+    .thirdTabFirstPause {
+      text-align: center;
+      font-size: 12px;
+      padding: 0px 20px;
+      border-radius: 20px;
+      background-color: #f5af19;
+      color: #07102a;
+    }
+    .thirdTabSecond {
+      color: gray;
+      font-size: 12px;
+    }
+    .thirdTabThird {
+      font-size: 15px;
+      font-weight: 600;
+    }
+  }  
+}
+
+
+.cardSecondSection{
+  font-size: 13px;
+}
+
+.gridContainer {
+  
+} 
+
+.gridCard {
+  padding: 15px;
+}
+
+.projectHeader {
+  margin: 15px; 
+  display: flex;
+
+  .sectionTitle {
+    font-size: 16px;
+    font-weight: 700;
+    width: 85%;
+
+    .secHeading {
+      margin-left: 5em;
+    }
+    .thiHeading {
+      margin-left: 5em;
+      background-color: black;
+      color: white;
+      padding: 5px 15px;
+      border-radius: 15px;
+    }
+  }
+
+  .sectionAction {
+    float: left;
+    span {
+      font-size: 10px;
+      border: 1px solid gray;
+      padding: 5px 15px;
+      margin-left: 80px;
+      border: 2px solid #07102A;
+      border-radius: 0px;
+      opacity: 1;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+
+  
+
+}
+
+.loadMoreSection {
+  text-align: center;
+  margin: 25px;
+  span {
+    color: #0073bb;
+    border: 1px solid #0073bb;
+    padding: 5px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  span:hover {
+    background-color: #0073bb;
+    color: #fff;
+  }
+}
+
+.sessionTemplate{
+  display: flex;
+  justify-content: space-between;
+  .firstS{
+    width: 15%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    .imgCont {
+      width: 80px;
+      height: 80px;
+      outline: dashed lightgray;
+      font-size: 12px;
+      text-align: center;
+      padding: 15px;
+    }
+  }
+  .secondS {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    .secTabFirst {
+      color: blue;
+      font-size: 16px;
+      font-weight: 700;
+    }
+    .secTabSecond {
+      color: gray;
+      font-size: 12px;
+    }
+    .secTabThird {
+      font-size: 15px;
+      font-weight: 600;
+    }
+  } 
+}
+
+.sessionEdit {
+  .title{
+    font-weight: 600;
+  }
+  .editSec {
+    float: right;
+    font-size: 10px; 
+  }
+  .sessTCard {
+    width: 40%;
+    font-size: 10px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 20px 5px;
+    margin: 15px 0px;
+    .firstTitle {
+      font-size: 15px;
+      font-weight: 600;
+    }
+  }
+
+  .recentAct {
+    padding: 10px 0px;
+    font-size: 12px;
+    .title{
+      font-weight: 700;
+    }
+    div {
+      border-bottom: 1px solid lightgrey;
+    }
+    span {
+      float: right;
+    }
+  }
+  img {
+    width: 30px
+  }
+  .resultTab {
+    text-align: center;
+    padding: 12em;
+  }
+}
+
+.tabCard {
+  height: 33em;
+}
+
+.sessionBudgetCardFirst{
+  display: flex;
+  justify-content: space-between;
+  .firstS{
+    width: 85%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    .secTabThird {
+      font-size: 23px;
+      line-height: 3.1;
+    }
+
+    .secTabSecond {
+      font-size: 16px;
+    }
+  }
+  .secondS {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    .secTabFirst {
+      color: blue;
+      font-size: 16px;
+      font-weight: 700;
+    }
+    .secTabSecond {
+      color: gray;
+      font-size: 12px;
+    }
+    .secTabThird {
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .imgCont {
+      width: 80px;
+      height: 80px;
+      outline: dashed lightgray;
+      font-size: 12px;
+      text-align: center;
+      padding: 15px;
+    }
+  } 
+}
+ 
+
+.cardFirstBox {
+  background: linear-gradient(111deg,#8E2DE2,#4A00E0)!important;
+  color: #fff;
+}
+
+.cardSecondBox {
+  background: linear-gradient(110deg,#F12711,#FF6F00)!important;
+  color: #fff;
+}
+
+.cardThirdBox {
+  background: linear-gradient(114deg,#0D8076,#118DB4)!important;
+  color: #fff;
+}
+
+.tabBox {
+  text-transform: capitalize;
+  font-size: 14px;
+  color: #545b64;
+}
+
+.projectDetTab {
+  display: flex;
+  justify-content: space-between;
+  .proLabelHead{
+    padding-bottom: 15px;
+    .proLabel {
+      font-size: 15px;
+      color: #16191f;
+      font-weight: 600;
+    }
+  
+    .proValue {
+      color: #16191f;
+      font-size: 13px;
+    }
+  }
+
+  .proActHead {
+    font-size: 15px;
+    color: #1976d2;
+    padding: 10px;
+    text-transform: capitalize;
+  }
+
+  .proActButton {
+    font-size: 13px;
+    color: #1976d2;
+
+    button {
+      margin: 5px 0px;
+      text-transform: capitalize;
+      font-size: 10px;
+      width: 150px;
+    }
+    .custBtn {
+      background-image: linear-gradient(195deg,#49a3f1,#1a73e8);
+      color: white;
+      border-right-width: 0;
+      border-bottom-width: 0;
+      background-color: hsla(0,0%,78%,.2);
+      font-weight: 400;
+      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
+      border-radius: 0.375rem;
+      margin-top: 1.5px;
+      margin-bottom: 1.5px;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      margin: 0 1rem;
+      -webkit-font-smoothing: antialiased;
+      padding-left: 1.5rem;
+      color: #344767;
+      font-size: 13px;
+      padding-right: 1.5rem;
+      font-weight: 300;
+      color: #fff;
+      margin-bottom: 10px;
+
+      .icon {
+        vertical-align: text-bottom;
+        padding-right: 10px;
+      }
+    }
+  }
+  
+}
+
+.cardBox {
+  box-shadow: 0px 2px 6px #00000029;
+  border: 1px solid #70707036;
+  opacity: 1;
+  border-radius: 0px;
+}
+
+.containerBox {
+  padding: 0px;
+}
+
+.containerTitle {
+  font-size: 18px;
+}
+
+.displayNone {
+  display: none;
+}
+
+.projectAction {
+  margin: -2px 2px;
+}
+
+.tabBoxDiv {
+  border-bottom: 1px solid #aab7b8;
+  button {
+    font-weight: 600;
+    color: #545b64;
+  }
+}
+
+.tabPanelBox {
+  padding: 20px 0px;
+}
+
+.cardTemplateFirst{
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  .firstS{
+    width: 50%;
+    height: 25px;
+    display: flex;
+    flex-direction: column; 
+  } 
+  .secondS{
+    width: 26%;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    .thirdTabFirst {
+      text-align: center;
+      font-size: 12px;
+      padding: 0px 25px;
+      border-radius: 20px;
+      background-color: #3fcb57;
+      color: #07102a;
+    }
+    .thirdTabFirstPause {
+      text-align: center;
+      font-size: 12px;
+      padding: 0px 20px;
+      border-radius: 20px;
+      background-color: #f5af19;
+      color: #07102a;
+    }
+    .thirdTabSecond {
+      color: gray;
+      font-size: 12px;
+    }
+    .thirdTabThird {
+      font-size: 15px;
+      font-weight: 600;
+    }
+  }  
+}
+
+.cardTemplateSec{
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  .firstS{
+    width: 25%;
+    margin: 5px 0px;
+    display: flex;
+    flex-direction: column;
+    .imgCont {
+      width: 60px;
+      height: 60px; 
+      border-radius: 10px;
+      img{
+        width: 60px;
+        height: 60px; 
+        border-radius: 10px;
+      }
+    }
+  }
+  .secondS {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    .secTabFirst {
+      color: #0073bb;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .secTabSecond {
+      color: gray;
+      font-size: 12px;
+    }
+    .secTabThird {
+      font-size: 13px;
+      font-weight: 600;
+    }
+  } 
+}
+
+.cardTime {
+  text-align: right;
+  font-size: 12px;
+}
+
+.cardContainerTem{
+  height: 105px;
+  cursor: pointer;
+}
+
+.cardContainerTemAv {
+  height: 170px;
+  cursor: pointer;
+  
+  .cardTemplateFirst{
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    .firstS{
+      width: 50%;
+      height: 25px;
+      display: flex;
+      flex-direction: column; 
+    } 
+    .secondS{
+      width: 26%;
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      .thirdTabFirst {
+        text-align: center;
+        font-size: 12px;
+        padding: 0px 25px;
+        border-radius: 20px;
+        background-color: #3fcb57;
+        color: #07102a;
+      }
+      .thirdTabFirstPause {
+        text-align: center;
+        font-size: 12px;
+        padding: 0px 20px;
+        border-radius: 20px;
+        background-color: #f5af19;
+        color: #07102a;
+      }
+      .thirdTabSecond {
+        color: gray;
+        font-size: 12px;
+      }
+      .thirdTabThird {
+        font-size: 15px;
+        font-weight: 600;
+      }
+    }  
+  }
+
+  .cardTemplateSec{
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    .firstS{
+      width: 25%;
+      margin: 5px 0px;
+      display: flex;
+      flex-direction: column;
+      .imgCont {
+        width: 60px;
+        height: 60px; 
+        border-radius: 10px;
+        img{
+          width: 60px;
+          height: 60px; 
+          border-radius: 10px;
+        }
+      }
+    }
+    .secondS {
+      width: 75%;
+      display: flex;
+      flex-direction: column;
+      padding: 2px;
+      .secTabFirst {
+        color: #0073bb;
+        font-size: 14px;
+        font-weight: 700;
+      }
+      .secTabSecond {
+        color: gray;
+        font-size: 12px;
+      }
+      .secTabThird {
+        font-size: 14px;
+        font-weight: 600;
+      }
+    } 
+  }
+}
+
+.proLaun {
+  text-align: center;
+  padding: 10px;
+}
+
+.filesSection {
+  margin: 15px 0px;
+
+  .cardTemplateSec{
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    .firstS{
+      width: 5%;
+      margin: 5px 0px;
+      display: flex;
+      flex-direction: column;
+      .imgCont {
+        width: 60px;
+        height: 60px; 
+        border-radius: 10px;
+        img{
+          width: 60px;
+          height: 60px; 
+          border-radius: 10px;
+        }
+      }
+    }
+    .secondS {
+      width: 93%;
+      display: flex;
+      flex-direction: column;
+      padding: 2px;
+      .secTabFirst {
+        color: #0073bb;
+        font-size: 14px;
+        font-weight: 700;
+      }
+      .secTabSecond {
+        color: gray;
+        font-size: 12px;
+      }
+      .secTabThird {
+        font-size: 16px;
+        font-weight: 600;
+      }
+    } 
+  }
+}
+
+.userActBox {
+  margin-top: 25px;
+}

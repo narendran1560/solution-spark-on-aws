@@ -29,14 +29,9 @@ export default function Layout({
 }: LayoutProps): JSX.Element {
   // eslint-disable-next-line prefer-const
   let [navigationOpen, setNavigationOpen] = useState(false);
-  const { notifications, displayNotification } = useNotifications();
+  const { notifications } = useNotifications();
   const id = 'BetaCodeWarning';
-  displayNotification(id, {
-    type: 'warning',
-    dismissible: false,
-    content:
-      'This software is in active development/testing mode. Do not put any critical, production, or otherwise important data in workspaces or studies.'
-  });
+ 
 
   const { settings } = useSettings();
   const appLayoutLabels: AppLayoutProps.Labels = layoutLabels;

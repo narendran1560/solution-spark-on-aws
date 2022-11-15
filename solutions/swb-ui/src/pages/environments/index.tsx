@@ -95,7 +95,7 @@ const Environment: NextPage = () => {
   // App layout constants
   const breadcrumbs: BreadcrumbGroupProps.Item[] = [
     {
-      text: 'Service Workbench',
+      text: 'Cloud Jump',
       href: '/'
     },
     {

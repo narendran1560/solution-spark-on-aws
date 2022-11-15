@@ -13,7 +13,7 @@ import Hero from '../components/Hero';
 const Home: NextPage = () => {
   const breadcrumbs: BreadcrumbGroupProps.Item[] = [
     {
-      text: 'Service Workbench',
+      text: 'Cloud Jump',
       href: '#'
     },
     {
